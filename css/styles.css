@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: rgb(42, 177, 255);
+    --red: rgb(255, 79, 79);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 27em;
+    width: 58em;
+    /* background-color: darkcyan; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nintendoSwitch {
+    height: 22em;
+    width: 52.4em;
+    /* background-color: silver; */
+    display: flex;
+}
+
+.controler {
+    height: 22em;
+    width: 7em;
+}
+
+.controlerLeft {
+    border-radius: 5em 0 0 5em;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.controlerRight {
+    border-radius: 0 5em 5em 0;
+    background-color: var(--red);
+}
+
+.bacScreen {
+    height: 22em;
+    background: #ffffff;
+    background: linear-gradient(0deg, #393838, #727272);
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient();
+}
+
+.cuartCircle {
+    width: 1em;
+    height: 1.2em;
+    background: white;
+}
+
+.circleLeft {
+    border-radius: 0 0 1em 0;
+}
+
+.blackScreen {
+    height: 20em;
+    width: 35em;
+    background-color: black;
+    margin-top: 0.9em;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.screen{
+    height: 16em;
+    width: 29em;
+    background-color: white;
+}
+
+.circleRight {
+    border-radius: 0 0 0 1em;
+}
+.topBlue{
+    height: 1.5em;
+    width: 2em;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.middleBlue{
+    height: 10em;
+    width: 7em;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+.bottomBlue{
+    height: 6em;
+    width: 7em;
+    background-color: salmon;
+}
+.topButton{
+    height: 0.4em;
+    width: 1.2em;
+    background-color: black;
+    border-radius: 1em;
+}
+.joystick{
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.1em 0.1em 0.1em black;
+}
+.centroJoystick{
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    border: 0.1em solid black;
+}
