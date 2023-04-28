@@ -96,7 +96,15 @@ body {
     border-radius: 0 0 0 1em;
 }
 
-.topBlue {
+.topBlue{
+    height: 2em;
+    width: 2em;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.topRed{
     height: 2em;
     width: 2em;
     /* background-color: yellow; */
@@ -114,8 +122,24 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+.middleRed {
+    height: 12em;
+    width: 7em;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .bottomBlue {
+    height: 6em;
+    width: 7em;
+    /* background-color: salmon; */
+    display: flex;
+    justify-content: flex-end;
+}
+.bottomRed {
     height: 6em;
     width: 7em;
     /* background-color: salmon; */
@@ -131,8 +155,25 @@ body {
     margin-right: 1.4em;
     border-radius: 0.1em;
 }
+.bottomRed div{
+    height: 1em;
+    width: 1em;
+    background-color: rgb(43, 43, 43);
+    box-shadow: 0.05em 0.05em 0.1em,
+        inset 0.1em -0.1em 0.3em;
+    margin-right: 1.4em;
+    border-radius: 0.1em;
+}
 
-.topButton {
+.topButtonLeft {
+    height: 0.4em;
+    width: 1.2em;
+    background-color: rgb(43, 43, 43);
+    border-radius: 1em;
+    box-shadow: 0.05em 0.05em 0.1em,
+        inset 0.1em -0.1em 0.3em;
+}
+.topButtonRight {
     height: 0.4em;
     width: 1.2em;
     background-color: rgb(43, 43, 43);
@@ -141,7 +182,18 @@ body {
         inset 0.1em -0.1em 0.3em;
 }
 
-.joystick {
+.joystickLeft {
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.1em 0.1em 0.1em,
+    inset 0.1em 0.1em 0.5em;
+}
+.joystickRight {
     height: 4em;
     width: 4em;
     border-radius: 50%;
