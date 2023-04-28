@@ -77,7 +77,7 @@ body {
 
 .blackScreen {
     height: 20em;
-    width: 35em;
+    width: 35.5em;
     background-color: black;
     margin-top: 0.9em;
     border-radius: 0.5em;
@@ -87,9 +87,12 @@ body {
 }
 
 .screen {
-    height: 16em;
-    width: 29em;
-    background-color: white;
+    height: 18em;
+    width: 33em;
+    /* background-color: red; */
+    background: url(../img/marioWallpaper.jpeg) white no-repeat;
+    background-size: 33em;
+    background-position-y: -0.57em;
 }
 
 .circleRight {
@@ -105,9 +108,9 @@ body {
     align-items: flex-end;
 }
 .topRed{
-    height: 2em;
+    height: 2.8em;
     width: 2em;
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -115,11 +118,14 @@ body {
 .cross{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    margin-left: 0.4em;
 }
 .topCross, .leftCross, .rightCross, .bottomCross, .middleCross{
-    background-color: rgb(43, 43, 43);
-    height: 0.35em;
-    width: 0.35em;
+    background-color: rgb(83, 83, 83);
+    height: 0.4em;
+    width: 0.4em;
+    box-shadow: 0.05em 0.05em 0.1em,
+        inset 0.1em -0.1em 0.9em;
 }
 .middleBlue {
     height: 12em;
@@ -133,7 +139,7 @@ body {
 .middleRed {
     height: 12em;
     width: 7em;
-    background-color: peru;
+    /* background-color: peru; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,9 +156,9 @@ body {
 .bottomRed {
     height: 6em;
     width: 7em;
-    background-color: salmon;
+    /* background-color: salmon; */
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 .bottomBlue div{
     height: 1em;
@@ -163,21 +169,40 @@ body {
     margin-right: 1.4em;
     border-radius: 0.1em;
 }
-.bottomRed div{
-    height: 1em;
-    width: 1em;
-    background-color: rgb(43, 43, 43);
+.bottomRed>div{
+    height: 1.6em;
+    width: 1.6em;
+    background-color: rgb(171, 171, 171);
     box-shadow: 0.05em 0.05em 0.1em,
-        inset 0.1em -0.1em 0.3em;
-    margin-right: 1.4em;
-    border-radius: 0.1em;
+        inset 0.1em 0.1em 0.3em;
+    margin-left: 1.4em;
+    border-radius: 50%;
+    border: 0.1em solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.7em;
+}
+.bottomRed>div>div{
+height: 1.1em;
+width: 1.1em;
+background-color: rgb(59, 59, 59);
+box-shadow: 0.05em 0.05em 0.1em,
+    inset 0 0 0.3em;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.homeIco{
+    font-size: 0.6em;
 }
 
 .topButtonLeft {
     height: 0.4em;
     width: 1.2em;
     background-color: rgb(43, 43, 43);
-    border-radius: 1em;
     box-shadow: 0.05em 0.05em 0.1em,
         inset 0.1em -0.1em 0.3em;
 }
@@ -211,6 +236,7 @@ body {
     align-items: center;
     box-shadow: 0.1em 0.1em 0.1em,
     inset 0.1em 0.1em 0.5em;
+    margin-bottom: 0.8em;
 }
 
 .centroJoystick {
@@ -239,6 +265,8 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     /* ¿¿Esta linea la dejo?? Solo con las columnas funciona */
+    margin-top: 0.3em;
+    margin-right: 1em;
 }
 
 .flechas div {
@@ -261,11 +289,12 @@ body {
     border: 0.1em;
     border-radius: 50%;
     color: rgb(210, 199, 199);
+    height: 1.8em;
+    width: 1.8em;
 }
 
 .letter {
-
-    font-size: 0.6em;
+    font-size: 0.9em;
     font-family: Arial, Helvetica, sans-serif;
 }
 
