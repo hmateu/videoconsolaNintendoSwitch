@@ -96,9 +96,18 @@
         </div>
     </div>
     </div>
+    <script>
+        function screenOn() {
+            let screen = document.getElementById("nintendoWallpaper");
 
-
-    <script src="./js/main.js"></script>
+            if (screen.src.match("./img/transparent.png")) {
+                screen.src = "../img/powerOn.gif";
+            } else {
+                screen.src = "../img/transparent.png";
+            }
+        }
+    </script>
+    <!-- <script src="./js/main.js"></script> -->
 </body>
 
 </html>
