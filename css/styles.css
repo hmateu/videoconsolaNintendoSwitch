@@ -161,7 +161,7 @@ body {
     display: flex;
     justify-content: flex-start;
 }
-.bottomBlue div{
+.bottomBlue>div{
     height: 1em;
     width: 1em;
     background-color: rgb(43, 43, 43);
@@ -169,7 +169,20 @@ body {
         inset 0.1em -0.1em 0.3em;
     margin-right: 1.4em;
     border-radius: 0.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.bottomBlue>div>.smallCircle{
+    height: 0.7em;
+    width: 0.7em;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0.1em 0.1em 0.1em,
+        inset 0.01em 0.01em 0.1em rgb(128, 128, 128);
+}
+
 .bottomRed>div{
     height: 1.6em;
     width: 1.6em;
@@ -251,7 +264,7 @@ align-items: center;
     inset 0.05em 0.05em 0.5em;
 }
 
-.flechas {
+.arrows {
     height: 4.5em;
     width: 4.5em;
     /* background-color: yellow; */
@@ -274,7 +287,7 @@ align-items: center;
     margin-right: 1em;
 }
 
-.flechas div {
+.arrows div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -307,16 +320,16 @@ align-items: center;
     /* display: flex;
     justify-content: center;
     align-items: center; */
-    padding-bottom: .25em;
-    padding-left: 0.03em;
+    padding-bottom: 0.1em;
+    padding-left: 0.1em;
     box-shadow: 0.1em 0.1em 0.1em,
         inset 0.1em 0.1em 0.3em;
 }
 
 .rightArrowBlue {
     transform: rotate(90deg);
-    padding-bottom: .25em;
-    padding-left: 0.03em;
+    padding-bottom: 0.3em;
+    padding-left: 0.1em;
     box-shadow: 0.1em -0.1em 0.1em,
         inset 0.1em -0.1em 0.3em;
 }
@@ -326,7 +339,7 @@ align-items: center;
     justify-content: center;
     align-items: center; */
     transform: rotate(180deg);
-    padding-bottom: .25em;
+    padding-bottom: 0.2em;
     padding-right: 0.03em;
     box-shadow: -0.1em -0.1em 0.1em,
         inset -0.1em -0.1em 0.3em;
@@ -334,13 +347,13 @@ align-items: center;
 
 .leftArrowBlue {
     transform: rotate(-90deg);
-    padding-bottom: .25em;
-    padding-right: 0.03em;
+    padding-bottom: 0.1em;
+    padding-right: 0.1em;
     box-shadow: -0.1em 0.1em 0.1em,
     inset -0.1em 0.1em 0.3em;
 }
 
-.flechas .empty, .letters .empty {
+.arrows .empty, .letters .empty {
     /* border: none; */
     background: none;
 }
