@@ -39,7 +39,7 @@ body {
 }
 
 .controlerLeft {
-    border-radius: 5em 0 0 5em;
+    border-radius: 5em 0.3em 0 5em;
     background-color: var(--blue);
     display: flex;
     flex-direction: column;
@@ -50,7 +50,7 @@ body {
 }
 
 .controlerRight {
-    border-radius: 0 5em 5em 0;
+    border-radius: 0.3em 5em 5em 0;
     background-color: var(--red);
     box-shadow: -0.313em -0.375em 2.875em -0.75em rgba(0,0,0,1) inset;
 }
@@ -135,7 +135,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .middleRed {
     height: 12em;
@@ -206,6 +206,7 @@ align-items: center;
     background-color: rgb(43, 43, 43);
     box-shadow: 0.05em 0.05em 0.1em,
         inset 0.1em -0.1em 0.3em;
+        margin-right: 0.8em;
 }
 .topButtonRight {
     height: 0.4em;
@@ -226,6 +227,7 @@ align-items: center;
     align-items: center;
     box-shadow: 0.1em 0.1em 0.1em,
     inset 0.1em 0.1em 0.5em;
+    margin-bottom: 1em;
 }
 .joystickRight {
     height: 4em;
@@ -257,6 +259,8 @@ align-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     /* ¿¿Esta linea la dejo?? Solo con las columnas funciona */
+    margin-right: 0.8em;
+    margin-top: 0.2em;
 }
 .letters {
     height: 4.5em;
@@ -274,8 +278,8 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1.3em;
-    width: 1.3em;
+    height: 1.8em;
+    width: 1.8em;
     background-color: rgb(56, 56, 56);
     border: 0.1em;
     border-radius: 50%;
