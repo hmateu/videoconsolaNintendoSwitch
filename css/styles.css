@@ -366,7 +366,22 @@ align-items: center;
     box-shadow: -0.1em 0.1em 0.1em,
     inset -0.1em 0.1em 0.3em;
 }
-
+.topLetter{
+    box-shadow: 0.1em 0.1em 0.1em black,
+    inset 0.1em 0.1em 0.3em black;
+}
+.rightLetter{
+    box-shadow: 0.1em 0.1em 0.1em black,
+    inset 0.1em 0.1em 0.3em black;
+}
+.bottomLetter{
+    box-shadow: 0.1em 0.1em 0.1em black,
+    inset 0.1em 0.1em 0.3em black;
+}
+.leftLetter{
+    box-shadow: 0.1em 0.1em 0.1em black,
+    inset 0.1em 0.1em 0.3em black;
+}
 .arrows .empty, .letters .empty {
     /* border: none; */
     background: none;
