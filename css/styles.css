@@ -104,9 +104,10 @@ body {
     height: 18.6em;
     width: 34.5em;
     /* background-color: red; */
-    background: url(../img/marioWallpaper.jpeg) white no-repeat;
+    /* background: url(../img/marioWallpaper.jpeg) white no-repeat;
     background-size: 34.5em;
-    background-position-y: -0.8em;
+    background-position-y: -0.8em; */
+    background: linear-gradient(100deg, rgb(10, 10, 10) 2%, rgb(54, 54, 54) 50%, rgb(10, 10, 10));
 }
 
 
