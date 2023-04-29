@@ -22,10 +22,24 @@ body {
     width: 58em;
     /* background-color: darkcyan; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+.powerButtons{
+    height: 1em;
+    width: 4em;
+    /* background-color: red; */
+    margin-left: -30em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.powerButtons>div{
+    height: 0.3em;
+    width: 1.2em;
+    background-color: black;
+}
 .nintendoSwitch {
     height: 22em;
     width: 52.4em;
