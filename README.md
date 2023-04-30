@@ -25,7 +25,7 @@ Esta réplica de la videoconsola Nintendo Switch, es capaz de realizar un par de
 <br>
 
   >**El botón que enciende la pantalla se hunde al pulsarlo**.
-  >![image](./img/encenderConsola.jpg)
+  >![image](./img/encenderSwitch.jpg)
 
 * El **cursor** del ratón **cambia** cada vez que se sitúa sobre algún botón.
 
