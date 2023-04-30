@@ -32,5 +32,18 @@ Para la realización de este proyecto, me he basado en la videoconsola **Nintend
 
 ### Desarrollo
 
+La videoconsola Nintendo Switch, ha sido desarrollada en gran parte con tan solo **HTML5** y **CSS3**. Finalmente se ha utilizado un poco de **Javascript** para la interacción del encendido de la pantalla con el usuario.
+
+El proyecto se ha llevado a cabo utilizando una estructura sólida de elementos **&lt;div&gt;**, distribuidos ordenadamente mediante el diseño de caja flexible, comúnmente conocido como **Flexbox**.
+
+1. Lo primero que se ha hecho ha sido dividir la consola en **3 grandes bloques**: El **control de la izquierda**, la **pantalla central** y el **control de la derecha**.
+ >![image](./img/divsPricipales.jpg)
+ 
+ 2. A continuación, cada uno de los divs contiene más divs y así sucesivamente hasta llegar a la estructura actual. Donde cada uno de los divs principales tiene un alto número de divs en su interior, para poder representar la videoconsola de la mejor manera posible.  
+
+    **Un ejemplo de la estructura actual de divs que se ha utilizado es el siguiente:**
+
+>![image](./img/divsSecundarios.jpg)
+
 ### Licencia y Copyright
 El material multimedia utilizado para la realización de este proyecto, es propiedad de ***Nintendo Co., Ltd***.
