@@ -21,4 +21,7 @@ También se ha utilizado, para mejorar el resultado final: **Adobe Photoshop**.
 Esta réplica de la videoconsola Nintendo Switch, es capaz de realizar un par de interacciones con el usuario.
 * **Encender / Apagar** la videoconsola:
   * Para encender la videoconsola, basta con que pulses el botón de encendido que se sitúa en la parte superior de la misma. Una vez encendida, si lo vuelves a pulsar, se apagará.
-  
+  >![image](./img/encenderConsola.jpg)
+
+* El **cursor** cambia cada vez que se sitúa sobre algún botón.
+* Todos **los botones** cambian de aspecto al pulsarlos.
