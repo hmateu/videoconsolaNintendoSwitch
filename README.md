@@ -19,12 +19,15 @@ También se ha utilizado, para mejorar el resultado final: **Adobe Photoshop**.
 
 ### Cómo funciona
 Esta réplica de la videoconsola Nintendo Switch, es capaz de realizar un par de interacciones con el usuario.
-* **Encender / Apagar** la videoconsola:
-  * Para encender la videoconsola, basta con que pulses el botón de encendido que se sitúa en la parte superior de la misma. Una vez encendida, si lo vuelves a pulsar, se apagará.
+**Encender / Apagar** la videoconsola:
+
+* Para **encender la videoconsola**, basta con **pulsar el botón situado en la parte superior de la misma**. Una vez encendida, **si lo vuelves a pulsar, se apagará**.
+<br>
+
+  >**El botón que enciende la pantalla se hunde al pulsarlo**.
   >![image](./img/encenderConsola.jpg)
 
-* El **cursor** cambia cada vez que se sitúa sobre algún botón.
-* Todos **los botones** cambian de aspecto al pulsarlos.
+* El **cursor** del ratón **cambia** cada vez que se sitúa sobre algún botón.
 
 ### Referencias
 Para la realización de este proyecto, me he basado en la videoconsola **Nintendo Switch**. Fue lanzada al mercado el **20 de septiembre del 2019** y rápidamente se convirtió en la consola de sobremesa que más rápido se ha vendido en la historia de la propia compañía.
@@ -36,14 +39,15 @@ La videoconsola Nintendo Switch, ha sido desarrollada en gran parte con tan solo
 
 El proyecto se ha llevado a cabo utilizando una estructura sólida de elementos **&lt;div&gt;**, distribuidos ordenadamente mediante el diseño de caja flexible, comúnmente conocido como **Flexbox**.
 
-1. Lo primero que se ha hecho ha sido dividir la consola en **3 grandes bloques**: El **control de la izquierda**, la **pantalla central** y el **control de la derecha**.
+**1.** Lo primero que se ha hecho ha sido dividir la consola en **3 grandes bloques**: El **control de la izquierda**, la **pantalla central** y el **control de la derecha**.
  >![image](./img/divsPricipales.jpg)
  
- 2. A continuación, cada uno de los divs contiene más divs y así sucesivamente hasta llegar a la estructura actual. Donde cada uno de los divs principales tiene un alto número de divs en su interior, para poder representar la videoconsola de la mejor manera posible.  
+ **2.** A continuación, cada uno de los divs contiene más divs y así sucesivamente hasta llegar a la estructura actual. Donde cada uno de los divs principales tiene un alto número de divs en su interior, para poder representar la videoconsola de la mejor manera posible.  
 
-    **Un ejemplo de la estructura actual de divs que se ha utilizado es el siguiente:**
+**Un ejemplo de la estructura actual de divs que se ha utilizado es el siguiente:**
 
 >![image](./img/divsSecundarios.jpg)
 
 ### Licencia y Copyright
-El material multimedia utilizado para la realización de este proyecto, es propiedad de ***Nintendo Co., Ltd***.
+* Este proyecto se ha realizado bajo la **licencia MIT**.
+* El material multimedia utilizado para la realización de este proyecto, es propiedad de ***Nintendo Co., Ltd***.
