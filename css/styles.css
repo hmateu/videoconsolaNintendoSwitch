@@ -25,14 +25,39 @@ body {
     /* background-color: darkcyan; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+}
+
+.topContainer {
+    display: flex;
+    align-items: flex-end;
+    /* background-color: orange; */
+    width: 52.4em;
+    justify-content: space-between;
+}
+
+.buttonRL {
+    height: 21.5em;
+    width: 6.4em;
+    background-color: black;
+    transform: translateY(21.17em);
+}
+
+.buttonRLLeft {
+    border-radius: 5em 0.3em 0 5em;
+    margin-left: 0.2em;
+}
+
+.buttonRLRight {
+    border-radius: 0.3em 5em 5em 0;
+    margin-right: 0.2em;
 }
 
 .powerButtons {
     height: 1em;
     width: 4em;
-    /* background-color: red; */
+    /* background-color: blue; */
     margin-left: -30em;
     display: flex;
     justify-content: space-evenly;
@@ -58,11 +83,13 @@ body {
     width: 52.4em;
     /* background-color: silver; */
     display: flex;
+    margin-bottom: 2.5em;
 }
 
 .controler {
     height: 22em;
     width: 7em;
+    z-index: 1;
 }
 
 .controlerLeft {
@@ -272,7 +299,8 @@ body {
     justify-content: center;
     align-items: center;
 }
-.bottomRed>div>div:hover{
+
+.bottomRed>div>div:hover {
     cursor: pointer;
 }
 
