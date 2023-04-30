@@ -77,7 +77,10 @@ body {
 .power2:hover {
     cursor: pointer;
 }
-
+.power1:active{
+    transform: translateY(0.1em);
+    z-index: 1;
+}
 .nintendoSwitch {
     height: 22em;
     width: 52.4em;
@@ -117,6 +120,7 @@ body {
     justify-content: space-between;
     /* background: linear-gradient(); */
     box-shadow: 0em 0.625em 0.5em rgb(182, 182, 182) inset;
+    z-index: 2;
 }
 
 .cuartCircle {
