@@ -94,6 +94,11 @@ body {
     z-index: 1;
 }
 
+.homeButton:active{
+    box-shadow: 0.05em 0.05em 0.1em,
+        inset 0.2em 0.2em 0.3em;
+}
+
 .nintendoSwitch {
     height: 22em;
     width: 52.4em;
