@@ -67,6 +67,7 @@ body {
     background-color: black;
 }
 
+.buttonRL:hover,
 .volumeLeft:hover,
 .volumeRight:hover,
 .topButtonLeft:hover,
@@ -94,7 +95,16 @@ body {
     z-index: 1;
 }
 
-.homeButton:active{
+.centroJoystick:active{
+    transform: translateX(0.3em) translateY(0.3em);
+    transition: 300ms;
+}
+
+.buttonRL:active {
+    transform: translateY(21.3em);
+}
+
+.homeButton:active {
     box-shadow: 0.05em 0.05em 0.1em,
         inset 0.2em 0.2em 0.3em;
 }
@@ -206,8 +216,6 @@ body {
     box-shadow: 0.05em 0.05em 0.1em,
         inset 0.1em -0.1em 0.9em;
 }
-
-
 
 .middleBlue {
     height: 12em;
@@ -352,6 +360,7 @@ body {
     border: 0.1em solid black;
     box-shadow: 0.05em 0.05em 0.1em,
         inset 0.05em 0.05em 0.5em;
+    transition: 300ms;
 }
 
 
@@ -432,7 +441,7 @@ body {
     padding-bottom: 0.15em;
     padding-right: 0.05em;
     box-shadow: -0.1em 0.1em 0.3em black,
-    inset 0.1em -0.1em 0.3em black;
+        inset 0.1em -0.1em 0.3em black;
 }
 
 .topLetter,
