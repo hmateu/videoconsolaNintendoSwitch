@@ -17,6 +17,7 @@ body {
     align-items: center;
     background: url("../img/marioWallpaper.jpg") no-repeat;
     background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -28,6 +29,7 @@ body {
     align-items: center;
 }
 
+/* Botones R y L, además de los de volumen */
 .topContainer {
     display: flex;
     align-items: flex-end;
@@ -61,11 +63,28 @@ body {
     align-items: flex-end;
 }
 
+.volumeButtons>div,
+.topButtonLeft,
+.topButtonRight {
+    width: 1.2em;
+}
+
 .volumeButtons>div {
     height: 0.3em;
-    width: 1.2em;
     background-color: black;
 }
+
+.volumeLeft:active,
+.volumeRight:active {
+    transform: translateY(0.1em);
+    z-index: 1;
+}
+
+.buttonRL:active {
+    transform: translateY(21.3em);
+}
+
+/* FIN - Botones R y L, además de los de volumen */
 
 .buttonRL:hover,
 .volumeLeft:hover,
@@ -89,20 +108,11 @@ body {
     cursor: pointer;
 }
 
-.volumeLeft:active,
-.volumeRight:active {
-    transform: translateY(0.1em);
-    z-index: 1;
-}
-
 .centroJoystick:active {
     transform: translateX(0.3em) translateY(0.3em);
     transition: 300ms;
 }
 
-.buttonRL:active {
-    transform: translateY(21.3em);
-}
 
 .homeButton:active {
     box-shadow: 0.05em 0.05em 0.1em,
@@ -110,14 +120,12 @@ body {
 }
 
 .nintendoSwitch {
-    height: 22em;
     width: 52.4em;
     display: flex;
     margin-bottom: 2.5em;
 }
 
 .controler {
-    height: 22em;
     width: 7em;
     z-index: 1;
 }
@@ -215,21 +223,22 @@ body {
         inset 0.1em -0.1em 0.9em;
 }
 
-.middleBlue {
-    height: 12em;
-    width: 7em;
+.middleBlue,
+.middleRed {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.middleBlue {
+    height: 12em;
+    width: 7em;
     justify-content: space-evenly;
 }
 
 .middleRed {
     height: 12em;
     width: 7em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -247,27 +256,42 @@ body {
     justify-content: flex-start;
 }
 
+.insideBottomBlue,
+.topButtonLeft,
+.topButtonRight,
+.joystickLeft,
+.joystickRight {
+    background-color: rgb(43, 43, 43);
+}
+
 .insideBottomBlue {
     height: 1em;
     width: 1em;
-    background-color: rgb(43, 43, 43);
     box-shadow: 0.05em 0.05em 0.1em,
         inset 0.1em -0.1em 0.3em;
     margin-right: 1.4em;
     border-radius: 0.1em;
 }
 
+.smallCircle,
+.outsideHomeButtom,
+.homeButton,
+.joystickLeft,
+.joystickRight,
+.centroJoystick,
+.arrows div,
+.letters div {
+    border-radius: 50%;
+}
+
 .smallCircle {
     height: 0.7em;
     width: 0.7em;
-    border-radius: 50%;
     background-color: black;
     box-shadow: 0.1em 0.1em 0.1em,
         outset 0.01em 0.01em 0.1em rgb(128, 128, 128);
     margin-left: 0.05em;
 }
-
-
 
 .outsideHomeButtom {
     height: 1.6em;
@@ -276,7 +300,6 @@ body {
     box-shadow: 0.05em 0.05em 0.1em,
         inset 0.1em 0.1em 0.3em;
     margin-left: 1.4em;
-    border-radius: 50%;
     border: 0.1em solid black;
     margin-top: 0.7em;
 }
@@ -287,10 +310,7 @@ body {
     background-color: rgb(59, 59, 59);
     box-shadow: 0.05em 0.05em 0.1em,
         inset 0 0 0.3em;
-    border-radius: 50%;
 }
-
-
 
 .homeIco {
     font-size: 0.6em;
@@ -298,19 +318,13 @@ body {
 
 .topButtonLeft {
     height: 0.4em;
-    width: 1.2em;
-    background-color: rgb(43, 43, 43);
     box-shadow: 0.05em 0.05em 0.1em,
         inset 0.1em -0.1em 0.3em;
     margin-right: 0.8em;
 }
 
-
-
 .topButtonRight {
-    height: 0.4em;
-    width: 1.2em;
-    background-color: rgb(43, 43, 43);
+    /* height: 0.4em; */
     border-radius: 1em;
     box-shadow: 0.05em 0.05em 0.1em,
         inset 0.1em -0.1em 0.3em;
@@ -319,8 +333,6 @@ body {
 .joystickLeft {
     height: 4em;
     width: 4em;
-    border-radius: 50%;
-    background-color: rgb(43, 43, 43);
     box-shadow: 0.1em 0.1em 0.1em,
         inset 0.1em 0.1em 0.5em;
     margin-bottom: 1em;
@@ -329,8 +341,6 @@ body {
 .joystickRight {
     height: 4em;
     width: 4em;
-    border-radius: 50%;
-    background-color: rgb(43, 43, 43);
     box-shadow: 0.1em 0.1em 0.1em,
         inset 0.1em 0.1em 0.5em;
     margin-bottom: 0.8em;
@@ -339,7 +349,6 @@ body {
 .centroJoystick {
     height: 3em;
     width: 3em;
-    border-radius: 50%;
     border: 0.1em solid black;
     box-shadow: 0.05em 0.05em 0.1em,
         inset 0.05em 0.05em 0.5em;
@@ -369,12 +378,16 @@ body {
     align-items: center;
 }
 
+.arrows div,
+.letters div {
+
+    background-color: rgb(56, 56, 56);
+}
+
 .arrows div {
     height: 1.8em;
     width: 1.8em;
-    background-color: rgb(56, 56, 56);
     border: 0.1em;
-    border-radius: 50%;
 }
 
 .letters {
@@ -390,9 +403,7 @@ body {
 .letters div {
     height: 1.3em;
     width: 1.3em;
-    background-color: rgb(56, 56, 56);
     border: 0.1em;
-    border-radius: 50%;
     color: rgb(210, 199, 199);
     height: 1.8em;
     width: 1.8em;
@@ -400,7 +411,6 @@ body {
 
 .letter {
     font-size: 0.9em;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .topArrowBlue,
@@ -408,11 +418,6 @@ body {
 .bottomArrowBlue,
 .leftArrowBlue {
     padding-bottom: 0.15em;
-}
-
-.topArrowBlue {
-    box-shadow: 0.1em 0.1em 0.3em black,
-        inset -0.1em -0.1em 0.3em black;
 }
 
 .rightArrowBlue {
@@ -435,6 +440,7 @@ body {
         inset 0.1em -0.1em 0.3em black;
 }
 
+.topArrowBlue,
 .topLetter,
 .rightLetter,
 .bottomLetter,
@@ -453,7 +459,8 @@ body {
 .leftLetter:active {
     box-shadow: inset 0 0 0.3em black;
 }
-.smallCircle:active{
+
+.smallCircle:active {
     box-shadow: inset 0 0 0.1em grey;
 }
 
