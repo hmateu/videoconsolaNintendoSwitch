@@ -70,18 +70,33 @@ body {
     background-color: black;
 }
 
-.volumeLeft:hover {
+.volumeLeft:hover,
+.volumeRight:hover,
+.topButtonLeft:hover,
+.centroJoystick:hover,
+.topArrowBlue:hover,
+.rightArrowBlue:hover,
+.bottomArrowBlue:hover,
+.leftArrowBlue:hover,
+.smallCircle:hover,
+.topCross:hover,
+.rightCross:hover,
+.bottomCross:hover,
+.leftCross:hover,
+.topLetter:hover,
+.rightLetter:hover,
+.bottomLetter:hover,
+.leftLetter:hover,
+.homeButton:hover {
     cursor: pointer;
 }
 
-.volumeRight:hover {
-    cursor: pointer;
-}
-
-.volumeLeft:active, .volumeRight:active{
+.volumeLeft:active,
+.volumeRight:active {
     transform: translateY(0.1em);
     z-index: 1;
 }
+
 .nintendoSwitch {
     height: 22em;
     width: 52.4em;
@@ -96,6 +111,11 @@ body {
     z-index: 1;
 }
 
+.controlerLeft,
+.controlerRight {
+    box-shadow: -0.313em -0.375em 2.875em -0.75em rgba(0, 0, 0, 1) inset;
+}
+
 .controlerLeft {
     border-radius: 5em 0.3em 0 5em;
     background-color: var(--blue);
@@ -104,13 +124,11 @@ body {
     align-items: flex-end;
     justify-content: center;
     justify-content: space-around;
-    box-shadow: -0.313em -0.375em 2.875em -0.75em rgba(0, 0, 0, 1) inset;
 }
 
 .controlerRight {
     border-radius: 0.3em 5em 5em 0;
     background-color: var(--red);
-    box-shadow: -0.313em -0.375em 2.875em -0.75em rgba(0, 0, 0, 1) inset;
 }
 
 .bacScreen {
@@ -159,22 +177,20 @@ body {
     border-radius: 0 0 0 1em;
 }
 
-.topBlue {
-    height: 2em;
-    width: 2em;
-    /* background-color: yellow; */
+.topBlue,
+.topRed {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    width: 2em;
+}
+
+.topBlue {
+    height: 2em;
 }
 
 .topRed {
     height: 2.8em;
-    width: 2em;
-    /* background-color: yellow; */
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
 }
 
 .cross {
@@ -195,12 +211,7 @@ body {
         inset 0.1em -0.1em 0.9em;
 }
 
-.topCross:hover,
-.leftCross:hover,
-.rightCross:hover,
-.bottomCross:hover {
-    cursor: pointer;
-}
+
 
 .middleBlue {
     height: 12em;
@@ -261,9 +272,7 @@ body {
     margin-left: 0.05em;
 }
 
-.smallCircle:hover {
-    cursor: pointer;
-}
+
 
 .outsideHomeButtom {
     height: 1.6em;
@@ -280,7 +289,7 @@ body {
     margin-top: 0.7em;
 }
 
-.homeButton{
+.homeButton {
     height: 1.1em;
     width: 1.1em;
     background-color: rgb(59, 59, 59);
@@ -292,9 +301,7 @@ body {
     align-items: center;
 }
 
-.homeButton:hover {
-    cursor: pointer;
-}
+
 
 .homeIco {
     font-size: 0.6em;
@@ -309,9 +316,7 @@ body {
     margin-right: 0.8em;
 }
 
-.topButtonLeft:hover {
-    cursor: pointer;
-}
+
 
 .topButtonRight {
     height: 0.4em;
@@ -357,9 +362,7 @@ body {
         inset 0.05em 0.05em 0.5em;
 }
 
-.centroJoystick:hover {
-    cursor: pointer;
-}
+
 
 .arrows {
     height: 4.5em;
@@ -416,92 +419,45 @@ body {
 }
 
 .topArrowBlue {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     padding-bottom: 0.1em;
     padding-left: 0.1em;
-    box-shadow: 0.1em 0.1em 0.1em,
-        inset 0.1em 0.1em 0.3em;
-}
-
-.topArrowBlue:hover {
-    cursor: pointer;
+    box-shadow: 0.1em 0.1em 0.3em black,
+        inset -0.1em -0.1em 0.3em black;
 }
 
 .rightArrowBlue {
     transform: rotate(90deg);
     padding-bottom: 0.3em;
     padding-left: 0.1em;
-    box-shadow: 0.1em -0.1em 0.1em,
-        inset 0.1em -0.1em 0.3em;
-}
-
-.rightArrowBlue:hover {
-    cursor: pointer;
+    box-shadow: 0.1em -0.1em 0.3em black,
+        inset -0.1em 0.1em 0.3em black;
 }
 
 .bottomArrowBlue {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     transform: rotate(180deg);
     padding-bottom: 0.2em;
     padding-right: 0.03em;
-    box-shadow: -0.1em -0.1em 0.1em,
-        inset -0.1em -0.1em 0.3em;
-}
-
-.bottomArrowBlue:hover {
-    cursor: pointer;
+    box-shadow: -0.1em -0.1em 0.3em black,
+        inset 0.1em 0.1em 0.3em black;
 }
 
 .leftArrowBlue {
     transform: rotate(-90deg);
     padding-bottom: 0.1em;
     padding-right: 0.1em;
-    box-shadow: -0.1em 0.1em 0.1em,
-        inset -0.1em 0.1em 0.3em;
+    /* box-shadow: -0.1em 0.1em 0.1em,
+        inset -0.1em 0.1em 0.3em; */
+        
+    box-shadow: -0.1em 0.1em 0.3em black,
+    inset 0.1em -0.1em 0.3em black;
 }
 
-.leftArrowBlue:hover {
-    cursor: pointer;
-}
-
-.topLetter {
-    box-shadow: 0.1em 0.1em 0.1em black,
-        inset 0.1em 0.1em 0.3em black;
-}
-
-.topLetter:hover {
-    cursor: pointer;
-}
-
-.rightLetter {
-    box-shadow: 0.1em 0.1em 0.1em black,
-        inset 0.1em 0.1em 0.3em black;
-}
-
-.rightLetter:hover {
-    cursor: pointer;
-}
-
-.bottomLetter {
-    box-shadow: 0.1em 0.1em 0.1em black,
-        inset 0.1em 0.1em 0.3em black;
-}
-
-.bottomLetter:hover {
-    cursor: pointer;
-}
-
+.topLetter,
+.rightLetter,
+.bottomLetter,
 .leftLetter {
-    box-shadow: 0.1em 0.1em 0.1em black,
-        inset 0.1em 0.1em 0.3em black;
-}
-
-.leftLetter:hover {
-    cursor: pointer;
+    box-shadow: 0.1em 0.1em 0.3em black,
+        inset -0.1em -0.1em 0.3em black;
 }
 
 .arrows .empty,
