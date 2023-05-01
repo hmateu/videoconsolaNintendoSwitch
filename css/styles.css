@@ -74,50 +74,7 @@ body {
     background-color: black;
 }
 
-.volumeLeft:active,
-.volumeRight:active {
-    transform: translateY(0.1em);
-    z-index: 1;
-}
-
-.buttonRL:active {
-    transform: translateY(21.3em);
-}
-
 /* FIN - Botones R y L, además de los de volumen */
-
-.buttonRL:hover,
-.volumeLeft:hover,
-.volumeRight:hover,
-.topButtonLeft:hover,
-.centroJoystick:hover,
-.topArrowBlue:hover,
-.rightArrowBlue:hover,
-.bottomArrowBlue:hover,
-.leftArrowBlue:hover,
-.smallCircle:hover,
-.topCross:hover,
-.rightCross:hover,
-.bottomCross:hover,
-.leftCross:hover,
-.topLetter:hover,
-.rightLetter:hover,
-.bottomLetter:hover,
-.leftLetter:hover,
-.homeButton:hover {
-    cursor: pointer;
-}
-
-.centroJoystick:active {
-    transform: translateX(0.3em) translateY(0.3em);
-    transition: 300ms;
-}
-
-
-.homeButton:active {
-    box-shadow: 0.05em 0.05em 0.1em,
-        inset 0.2em 0.2em 0.3em;
-}
 
 .nintendoSwitch {
     width: 52.4em;
@@ -143,6 +100,16 @@ body {
     align-items: flex-end;
     justify-content: center;
     justify-content: space-around;
+}
+
+.controler .topBlue,
+.controler .topRed {
+    align-items: flex-end;
+    width: 2em;
+}
+
+.topBlue {
+    height: 2em;
 }
 
 .controlerRight {
@@ -189,16 +156,6 @@ body {
 
 .circleRight {
     border-radius: 0 0 0 1em;
-}
-
-.controler .topBlue,
-.controler .topRed {
-    align-items: flex-end;
-    width: 2em;
-}
-
-.topBlue {
-    height: 2em;
 }
 
 .topRed {
@@ -324,7 +281,6 @@ body {
 }
 
 .topButtonRight {
-    /* height: 0.4em; */
     border-radius: 1em;
     box-shadow: 0.05em 0.05em 0.1em,
         inset 0.1em -0.1em 0.3em;
@@ -413,6 +369,7 @@ body {
     font-size: 0.9em;
 }
 
+/*  Centrado de las flechas */
 .topArrowBlue,
 .rightArrowBlue,
 .bottomArrowBlue,
@@ -449,6 +406,50 @@ body {
         inset -0.1em -0.1em 0.3em black;
 }
 
+.arrows .empty,
+.letters .empty {
+    background: none;
+}
+
+/* --------------- Hover y Active --------------- */
+
+.buttonRL:hover,
+.volumeLeft:hover,
+.volumeRight:hover,
+.topButtonLeft:hover,
+.centroJoystick:hover,
+.topArrowBlue:hover,
+.rightArrowBlue:hover,
+.bottomArrowBlue:hover,
+.leftArrowBlue:hover,
+.smallCircle:hover,
+.topCross:hover,
+.rightCross:hover,
+.bottomCross:hover,
+.leftCross:hover,
+.topLetter:hover,
+.rightLetter:hover,
+.bottomLetter:hover,
+.leftLetter:hover,
+.homeButton:hover {
+    cursor: pointer;
+}
+
+.volumeLeft:active,
+.volumeRight:active {
+    transform: translateY(0.1em);
+    z-index: 1;
+}
+
+.centroJoystick:active {
+    transform: translateX(0.3em) translateY(0.3em);
+    transition: 300ms;
+}
+
+.buttonRL:active {
+    transform: translateY(21.3em);
+}
+
 .topArrowBlue:active,
 .rightArrowBlue:active,
 .bottomArrowBlue:active,
@@ -464,7 +465,9 @@ body {
     box-shadow: inset 0 0 0.1em grey;
 }
 
-.arrows .empty,
-.letters .empty {
-    background: none;
+.homeButton:active {
+    box-shadow: 0.05em 0.05em 0.1em,
+        inset 0.2em 0.2em 0.3em;
 }
+
+/* --------------- Fin - Hover y Active --------------- */
