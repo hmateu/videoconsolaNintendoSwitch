@@ -21,13 +21,14 @@ También se ha utilizado, para mejorar el resultado final: **Adobe Photoshop**.
 Esta réplica de la videoconsola Nintendo Switch, es capaz de realizar un par de interacciones con el usuario.
 **Encender / Apagar** la videoconsola:
 
-* Para **encender la videoconsola**, basta con **pulsar el botón situado en la parte superior de la misma**. Una vez encendida, **si lo vuelves a pulsar, se apagará**.
+* Para **encender la videoconsola**, basta con **pulsar** el botón situado en la parte inferior del control derecho. El botón con el **icono de una casa**. Una vez encendida, **si lo vuelves a pulsar, se apagará**.
 <br>
 
   >**El botón que enciende la pantalla se hunde al pulsarlo**.
   >![image](./img/encenderSwitch.jpg)
 
 * El **cursor** del ratón **cambia** cada vez que se sitúa sobre algún botón.
+* Los diferentes botones tienen una animación al ser pulsados.
 
 ### Referencias
 Para la realización de este proyecto, me he basado en la videoconsola **Nintendo Switch**. Fue lanzada al mercado el **20 de septiembre del 2019** y rápidamente se convirtió en la consola de sobremesa que más rápido se ha vendido en la historia de la propia compañía.
