@@ -238,7 +238,7 @@ body {
     justify-content: flex-start;
 }
 
-.bottomBlue>div {
+.insideBottomBlue {
     height: 1em;
     width: 1em;
     background-color: rgb(43, 43, 43);
@@ -251,20 +251,7 @@ body {
     align-items: center;
 }
 
-.bottomBlue>div {
-    height: 1em;
-    width: 1em;
-    background-color: rgb(43, 43, 43);
-    box-shadow: 0.05em 0.05em 0.1em,
-        inset 0.1em -0.1em 0.3em;
-    margin-right: 1.4em;
-    border-radius: 0.1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bottomBlue>div>.smallCircle {
+.smallCircle {
     height: 0.7em;
     width: 0.7em;
     border-radius: 50%;
@@ -274,11 +261,11 @@ body {
     margin-left: 0.05em;
 }
 
-.bottomBlue>div>.smallCircle:hover {
+.smallCircle:hover {
     cursor: pointer;
 }
 
-.bottomRed>div {
+.outsideHomeButtom {
     height: 1.6em;
     width: 1.6em;
     background-color: rgb(171, 171, 171);
@@ -293,7 +280,7 @@ body {
     margin-top: 0.7em;
 }
 
-.bottomRed>div>div {
+.homeButton{
     height: 1.1em;
     width: 1.1em;
     background-color: rgb(59, 59, 59);
@@ -305,7 +292,7 @@ body {
     align-items: center;
 }
 
-.bottomRed>div>div:hover {
+.homeButton:hover {
     cursor: pointer;
 }
 
