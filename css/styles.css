@@ -22,7 +22,6 @@ body {
 .container {
     height: 27em;
     width: 58em;
-    /* background-color: darkcyan; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -32,7 +31,6 @@ body {
 .topContainer {
     display: flex;
     align-items: flex-end;
-    /* background-color: orange; */
     width: 52.4em;
     justify-content: space-between;
 }
@@ -57,7 +55,6 @@ body {
 .volumeButtons {
     height: 1em;
     width: 4em;
-    /* background-color: blue; */
     margin-left: -30em;
     display: flex;
     justify-content: space-evenly;
@@ -100,7 +97,6 @@ body {
 .nintendoSwitch {
     height: 22em;
     width: 52.4em;
-    /* background-color: silver; */
     display: flex;
     margin-bottom: 2.5em;
 }
@@ -137,7 +133,6 @@ body {
     flex: 1;
     display: flex;
     justify-content: space-between;
-    /* background: linear-gradient(); */
     box-shadow: 0em 0.625em 0.5em rgb(182, 182, 182) inset;
     z-index: 2;
 }
@@ -166,10 +161,6 @@ body {
 .screen {
     height: 18.6em;
     width: 34.5em;
-    /* background-color: red; */
-    /* background: url(../img/marioWallpaper.jpeg) white no-repeat;
-    background-size: 34.5em;
-    background-position-y: -0.8em; */
     background: linear-gradient(100deg, rgb(10, 10, 10) 2%, rgb(54, 54, 54) 50%, rgb(10, 10, 10));
 }
 
@@ -216,7 +207,6 @@ body {
 .middleBlue {
     height: 12em;
     width: 7em;
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -226,7 +216,6 @@ body {
 .middleRed {
     height: 12em;
     width: 7em;
-    /* background-color: peru; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -236,7 +225,6 @@ body {
 .bottomBlue {
     height: 6em;
     width: 7em;
-    /* background-color: salmon; */
     display: flex;
     justify-content: flex-end;
 }
@@ -244,7 +232,6 @@ body {
 .bottomRed {
     height: 6em;
     width: 7em;
-    /* background-color: salmon; */
     display: flex;
     justify-content: flex-start;
 }
@@ -367,11 +354,9 @@ body {
 .arrows {
     height: 4.5em;
     width: 4.5em;
-    /* background-color: yellow; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    /* ¿¿Esta linea la dejo?? Solo con las columnas funciona */
     margin-right: 0.8em;
     margin-top: 0.2em;
 }
@@ -379,11 +364,9 @@ body {
 .letters {
     height: 4.5em;
     width: 4.5em;
-    /* background-color: yellow; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    /* ¿¿Esta linea la dejo?? Solo con las columnas funciona */
     margin-top: 0.3em;
     margin-right: 1em;
 }
@@ -419,35 +402,30 @@ body {
 }
 
 .topArrowBlue {
-    padding-bottom: 0.1em;
-    padding-left: 0.1em;
+    padding-bottom: 0.15em;
     box-shadow: 0.1em 0.1em 0.3em black,
         inset -0.1em -0.1em 0.3em black;
 }
 
 .rightArrowBlue {
     transform: rotate(90deg);
-    padding-bottom: 0.3em;
-    padding-left: 0.1em;
+    padding-bottom: 0.15em;
+    padding-left: 0.05em;
     box-shadow: 0.1em -0.1em 0.3em black,
         inset -0.1em 0.1em 0.3em black;
 }
 
 .bottomArrowBlue {
     transform: rotate(180deg);
-    padding-bottom: 0.2em;
-    padding-right: 0.03em;
+    padding-bottom: 0.15em;
     box-shadow: -0.1em -0.1em 0.3em black,
         inset 0.1em 0.1em 0.3em black;
 }
 
 .leftArrowBlue {
     transform: rotate(-90deg);
-    padding-bottom: 0.1em;
-    padding-right: 0.1em;
-    /* box-shadow: -0.1em 0.1em 0.1em,
-        inset -0.1em 0.1em 0.3em; */
-        
+    padding-bottom: 0.15em;
+    padding-right: 0.05em;
     box-shadow: -0.1em 0.1em 0.3em black,
     inset 0.1em -0.1em 0.3em black;
 }
@@ -462,6 +440,5 @@ body {
 
 .arrows .empty,
 .letters .empty {
-    /* border: none; */
     background: none;
 }
